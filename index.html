@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Hennani Art - Henna Tattoo Services</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0; padding: 0;
+    background: #fff8f0;
+    color: #5b3a29;
+  }
+  header {
+    background: #a9693e;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  nav {
+    background: #7a512b;
+    display: flex;
+    justify-content: center;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    display: inline-block;
+    font-weight: 600;
+    transition: background 0.3s;
+  }
+  nav a:hover {
+    background: #5b3a1f;
+  }
+  section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  h2 {
+    border-bottom: 2px solid #a9693e;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 15px;
+  }
+  .gallery img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #d9bba7;
+  }
+  .services ul, .faqs ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .services li, .faqs li {
+    margin-bottom: 12px;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #7a512b;
+    color: white;
+    margin-top: 50px;
+  }
+  form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  form label {
+    font-weight: 600;
+  }
+  form input, form textarea, form select {
+    padding: 10px;
+    border: 1px solid #a9693e;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  form button {
+    background: #a9693e;
+    color: white;
+    font-weight: 700;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background 0.3s;
+  }
+  form button:hover {
+    background: #7a512b;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  Hennani Art
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About Us</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#services">Services</a>
+  <a href="#faqs">FAQs</a>
+  <a href="#booking">Booking</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+  <h2>Welcome to Hennani Art</h2>
+  <p>Discover the beauty and tradition of henna with Hennani Art, where every design tells a story...</p>
+</section>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>Hennani Art is led by a passionate henna artist dedicated to bringing timeless henna traditions...</p>
+</section>
+
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Henna 1" />
+    <img src="https://images.unsplash.com/photo-1542838687-741a4c9f0c19?auto=format&fit=crop&w=400&q=80" alt="Henna 2" />
+    <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=400&q=80" alt="Henna 3" />
+    <img src="https://images.unsplash.com/photo-1496317556649-f930d733eea2?auto=format&fit=crop&w=400&q=80" alt="Henna 4" />
+  </div>
+</section>
+
+<section id="services" class="services">
+  <h2>Our Services</h2>
+  <ul>
+    <li>Custom Henna Designs for Weddings & Events</li>
+    <li>Bridal Henna Packages</li>
+    <li>Festival & Party Henna</li>
+    <li>Henna Workshops & Classes</li>
+    <li>Henna for Hands, Feet, and Body</li>
+  </ul>
+</section>
+
+<section id="faqs" class="faqs">
+  <h2>FAQs</h2>
+  <ul>
+    <li><strong>Q:</strong> Is your henna natural and safe?<br /><strong>A:</strong> Yes! We use 100% natural henna paste...</li>
+    <li><strong>Q:</strong> How long does the henna stain last?<br /><strong>A:</strong> Typically 1-3 weeks...</li>
+    <li><strong>Q:</strong> How far in advance should I book?<br /><strong>A:</strong> At least 2 weeks ahead...</li>
+    <li><strong>Q:</strong> Do you travel for events?<br /><strong>A:</strong> Yes, please contact us for pricing.</li>
+  </ul>
+</section>
+
+<section id="booking">
+  <h2>Online Booking</h2>
+  <form action="https://formspree.io/f/your-form-id" method="POST">
+    <label for="book-name">Full Name</label>
+    <input type="text" id="book-name" name="name" required />
+    <label for="book-email">Email</label>
+    <input type="email" id="book-email" name="_replyto" required />
+    <label for="book-phone">Phone Number</label>
+    <input type="tel" id="book-phone" name="phone" />
+    <label for="book-service">Select Service</label>
+    <select id="book-service" name="service" required>
+      <option value="">Select a service</option>
+      <option value="Bridal Henna">Bridal Henna</option>
+      <option value="Festival Henna">Festival Henna</option>
+      <option value="Party Henna">Party Henna</option>
+      <option value="Workshop">Workshop</option>
+    </select>
+    <label for="book-date">Preferred Date</label>
+    <input type="date" id="book-date" name="date" required />
+    <label for="book-time">Preferred Time</label>
+    <input type="time" id="book-time" name="time" />
+    <label for="book-notes">Additional Notes</label>
+    <textarea id="book-notes" name="notes"></textarea>
+    <button type="submit">Book Now</button>
+  </form>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form onsubmit="event.preventDefault(); alert('Thank you!'); this.reset();">
+    <label for="name">Name</label>
+    <input type="text" id="name" required />
+    <label for="email">Email</label>
+    <input type="email" id="email" required />
+    <label for="message">Message</label>
+    <textarea id="message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 Hennani Art | All rights reserved
+</footer>
+
+</body>
+</html>
